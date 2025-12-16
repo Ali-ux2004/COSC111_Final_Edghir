@@ -1,24 +1,38 @@
+/**
+ * Task Class
+ * Ali Edghir
+ */
 public class Task {
+
     private String description;
     private boolean isDone;
 
-    //constructor
+    /**
+     * here the constructor creates a new task with a description.
+     * tasks will not becompleted by default.
+     */
     public Task(String description) {
         this.description = description;
         this.isDone = false;
     }
 
-    //mark as complete
+    /**
+     * here marks the task complete
+     */
     public void markDone() {
-        this.isDone = true;
+        isDone = true;
     }
 
-    //getter for the description
+    /**
+     * returns the description of the task.
+     */
     public String getDescription() {
         return description;
     }
 
-    //getter for status
+    /**
+     * here if task is completed it returns true 
+     */
     public boolean isCompleted() {
         return isDone;
     }
